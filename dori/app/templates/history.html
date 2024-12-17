@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% include 'navbar.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1this is history, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HISTORY</h1>
+    <a href="{% url 'display' %}"><button>LIST PAGE</button></a>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit"> DELETE ALL</button>
+    </form>
+    {% for i in dele %}
+        <label for="">Title :</label>{{ i.title}}
+        <br>
+        <label for="">Desc</label>{{ i.desc }}
+        <hr>
+    {% endfor %}
+</body>
+</html>

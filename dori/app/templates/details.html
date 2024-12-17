@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% include 'navbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static'css/details.css' %}">
+</head>
+<body>
+    <h1>this is details page</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="">TITLE :</label>{{ dis.title }}
+        <br>
+        <label for="">DESCPRITION :</label>{{ dis.desc }}
+        <hr>
+        <button type="submit">MARK AS READ</button>
+    </form>
+    <a href="{% url 'edit' dis.id %}"> <button>EDIT</button></a>
+</body>
+</html>

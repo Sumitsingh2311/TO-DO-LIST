@@ -1,0 +1,45 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Container for the list */
+.list-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Link styling */
+.list-item {
+    display: block;
+    font-size: 1.2em;
+    color: #0073e6;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.list-item:hover {
+    color: #005bb5;
+}
+
+/* Styling for the horizontal line */
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
